@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Match Picture Game</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="js/MemoryGame.js" type="text/javascript"></script>
+    <script src="js/Card.js" type="text/javascript"></script>
+    <link href="css/MemoryGame.css" type="text/css" rel="stylesheet" />
+  </head>
+  <body>
+    <div id="particles-js"></div>
+    <section id="memory--settings-modal" class="valign-table modal show">
+      <div class="valign-cell">
+        <form>
+          <a href="../index.html"><input id="memory--settings-biodata" type="button" value="Kembali" /></a>
+          <input id="memory--settings-biodata" type="button" value="ITB Stikom Ambon" />
+          <input id="memory--settings-biodata" type="button" value="Konsentrasi Mobile" />
+          <input id="memory--settings-biodata" type="button" value="Sistem Informasi 2020" />
+
+          <h2 class="memory--settings-label">Level Kesulitan :</h2>
+          <select id="memory--settings-grid">
+            <option value="2x3">Easy</option>
+            <option value="3x4" selected>Medium</option>
+            <option value="4x5">Hard</option>
+            <option value="5x6">Very Hard</option>
+          </select>
+          <input id="memory--settings-reset" type="submit" value="Mulai" />
+        </form>
+      </div>
+    </section>
+    <section id="memory--end-game-modal" class="valign-table modal">
+      <div class="valign-cell">
+        <div class="wrapper">
+          <h2 id="memory--end-game-message"></h2>
+          <h3 id="memory--end-game-score"></h3>
+        </div>
+      </div>
+    </section>
+    <section id="memory--app-container">
+      <ul id="memory--cards"></ul>
+    </section>
+    <section class="memory--menu-bar" style="z-index: 999">
+      <div class="inner">
+        <div class="left">
+          <h1 class="memory--app-name">Match Picture Game by Group Banteng <span>Merah</span> 😈</h1>
+        </div>
+        <div class="right">
+          <a href="#settings"><img id="memory--settings-icon" src="images/gear.png" /></a>
+        </div>
+      </div>
+    </section>
+
+    <script src="js/BrowserInterface.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
